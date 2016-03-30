@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ <title></title>
+</head>
+<body>
+ <div class="row">
+   <div class="col-md-6 col-md-offset-3">
+     <div class="page-header">
+       <h1>Spacebook</h1>
+     </div>
+
+     <div class="posts">
+     </div>
+
+     <form class="beer-form">
+       <h3>Add a New Post</h3>
+
+       <div class="form-group">
+         <input type="text" id="post-name" class="form-control" placeholder="Post Text">
+         </input>
+       </div>
+
+       <button class="btn btn-primary add-post">Post</button>
+     </form>
+
+   </div>
+ </div>
+ <script id="store-template" type="text/x-handlebars-template"> 
+    <div class="post">
+      <a href="#" class="remove">remove</a> 
+      <a href="#" class="show-comments">comments</a> {{text}}
+      <div class="comments-container">
+        <div class="comments-list">
+        <input type="text" class="comment-name"><button class="btn btn-primary add-comment">Post Comment</button> 
+      </div>
+    </div>
+ </script>
+ <script src="handlebars-v4.0.5.js"></script>
+ <script src="main.js"></script>
+</body>
+</html>

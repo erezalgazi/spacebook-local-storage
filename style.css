@@ -1,0 +1,7 @@
+.comments-container {
+ display: none;
+}
+
+.show {
+ display: block;
+}
